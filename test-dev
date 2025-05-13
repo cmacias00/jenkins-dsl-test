@@ -1,0 +1,10 @@
+node {
+    try {
+      stage("test") {
+          echo "Test stage"
+      }
+    } catch (e) {
+        echo "Excepción: ${e.message}"
+        currentBuild.result = 'FAILURE'
+    }
+}

@@ -1,4 +1,4 @@
-pipelineJob('job1-pre') {
+pipelineJob('dev/job1-pre') {
     description('Job auto-creado desde Git que hace despliegue con try/catch')
 
     definition {
